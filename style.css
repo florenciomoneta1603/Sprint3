@@ -1,0 +1,221 @@
+:root {
+    --rojo: rgb(246, 25, 25);
+    --blanco: white;
+    --negro: rgb(8, 8, 8);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navegacion {
+    background-color: var(--negro);
+    padding: 0rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    @media(min-width: 390px){
+        flex-direction: row;
+        padding: 2rem;
+    }
+}
+
+.navegacion-escudo {
+    max-width: 60px;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.navegacion-enlaces {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    
+}
+
+.navegacion a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    transition: color 0.2s ease-in-out;
+    margin-bottom:10rem;
+
+}
+
+.navegacion a:hover {
+    color: var(--rojo)
+}
+
+.main {
+    background-image: url("/imagenes/monumental.jpeg");
+    padding: 3rem 0;
+    height: 530px;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main h1 {
+    margin: 0;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2.2rem;
+    text-align: center;
+    @media(min-width:768px){
+        font-size: 4rem;}
+}
+
+.camisetas {
+    background-color: var(--rojo);
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.camisetas h2 {
+    margin: 0;
+    color: var(--blanco);
+    text-align: center;
+    }
+
+
+.camisetas-imagenes {
+    display: grid;
+    max-width: 50%;
+    width: 100%;
+    margin: 1.5rem 0;
+    gap: 5rem;
+    @media(min-width: 1024px){
+    grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.imagen {
+    max-width: 350px;
+    width: 100%;
+    background-color: rgb(201, 10, 10);
+    transition: all 0.5s ease-in-out;
+    padding: 0;
+}
+
+.imagen:hover {
+background-color: rgb(151, 19, 19);
+transform: scale(1.1);
+cursor: pointer;
+}
+
+.imagen img {
+    width: 100%;
+}
+
+.imagen-proporcional {
+    max-width: 700px;
+    width: 100%;
+}
+
+.footer {
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 2rem 0;
+}
+
+.footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 0.9rem;
+    @media(min-width: 270px){
+        font-size: 1.2rem;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.club {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.club-datos,
+.socios-datos {
+    list-style: none;
+}
+
+.club-imagen {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.socios {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 2rem 0;
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+@media(min-width: 768px){
+    flex-direction: row;
+    height: 100vh;  
+}
+}
+.socios-info{
+    width: -webkit-fill-available;
+    @media(min-width:768px){
+        width: auto;
+    }
+}
+
+.socios-imagen {
+    width: auto;
+    @media(min-width: 768px){
+width: 2000px;
+    }
+}
+
+.socios-numeros {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    text-align: center;
+    @media(min-width:768px){
+        flex-direction: row;
+        gap: 5rem;
+        text-align: left;
+    }
+}
+
+.socios-numeros span {
+    color: var(--rojo);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.boton {
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-weight: 700;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    display: block;
+    margin: 2rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.5s ease-in-out;
+}
+
+.boton:hover {
+    background-color: var(--rojo);
+}
